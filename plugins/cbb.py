@@ -11,12 +11,12 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     if data == "about":
         await query.message.edit_text(
             text = f"""<b><blockquote>╭───────────⍟
-├➤ ᴏᴡɴᴇʀ : <a href='t.me/'>ᴛʜɪs ᴘᴇʀsᴏɴ</a>
+├➤ ᴏᴡɴᴇʀ : <a href='tg://user?id={OWNER_ID}'>ᴛʜɪs ᴘᴇʀsᴏɴ</a>
 ├➤ ʟɪʙʀᴀʀy : <a href=https://github.com/pyrogram>ᴘʏʀᴏɢʀᴀᴍ</a>
 ├➤ ʟᴀɴɢᴜᴀɢᴇ : <a href=https://www.python.org>ᴘʏᴛʜᴏɴ 3</a>
 ├➤ ᴍʏ ᴜᴘᴅᴀᴛᴇs : <a href=https://t.me/outlawbots>ᴏᴜᴛʟᴀᴡ ʙᴏᴛs</a>
 ├➤ ᴘᴀɪᴅ ʙᴏᴛ : <a href=https://t.me/ifeelscam>ᯓ ɪɴᴠᴀʟɪᴅ ᡣ𐭩</a>
-├➤ ᴅᴇᴠʟᴏᴘᴇʀ : <a href=https://t.me/ifeelscam>ʜᴀᴍᴢᴀ</a>
+├➤ ᴅᴇᴠʟᴏᴘᴇʀ : <a href=https://t.me/ifeelscam>ᯓ ʜᴀᴛᴇ ғʀᴇᴇ ᡣ𐭩</a>
 ╰───────────────⍟</blockquote></b>""",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
@@ -30,23 +30,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                 ]
             )
         )
-        
-    elif query.data == "plan":
-        btn = [[
-            InlineKeyboardButton(' Send Payment Screenshot (ADMIN)', url="t.me/UnseenAdmin")
-        ],[
-            InlineKeyboardButton(' ᴄʟᴏꜱᴇ ', callback_data='close')
-        ]]
-        reply_markup = InlineKeyboardMarkup(btn)
-        await query.message.reply_photo(
-            photo=("https://graph.org/file/30f2719bec632aad4e5be.jpg"),
-            caption=message_content.format(
-                first = query.from_user.mention, 
-                second = query.from_user.mention
-        ),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
+       
 
         
     elif data == "close":
@@ -62,7 +46,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             reply_markup = InlineKeyboardMarkup(
                 [   
                     [
-                        InlineKeyboardButton("ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ", url="https://t.me/InkaLinks"),
+                        InlineKeyboardButton("ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ", url="https://t.me/+3meWpN3XEjc3MTI1"),
                         InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ",url = "t.me/outlawbots")
                     ],
                     [   InlineKeyboardButton("🔙 ʙᴀᴄᴋ ", callback_data = "home"), 
@@ -111,8 +95,8 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                 disable_web_page_preview=True,
                 reply_markup = InlineKeyboardMarkup(
                     [
-                        [  InlineKeyboardButton("ᴅᴇᴠʟᴏᴘᴇʀ",url= "t.me/ifeelscam"),
-                         InlineKeyboardButton("ᴀᴅᴍɪɴ",url = "t.me/UnseenAdmin")],
+                        [  InlineKeyboardButton("ᴅᴇᴠʟᴏᴘᴇʀ",url= "t.me/HateXfree"),
+                         InlineKeyboardButton("ᴀᴅᴍɪɴ",url = "t.me/Patanahimcom")],
                         [ InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data = "home"),
                          InlineKeyboardButton( "🚫 ᴄʟᴏsᴇ", callback_data = "close")]
                     ]
