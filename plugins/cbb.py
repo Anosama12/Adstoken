@@ -63,7 +63,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             pass
     elif data == "home":
         await query.message.edit_text(
-            text=f"<b><blockquote>👋 Hey {query.from_user.mention}\n\nI'm advance bot of providing videos for @InkaLinks Channel!!..</blockquote></b>",
+            text=f"<b><blockquote>👋 Hey {query.from_user.mention}\n\nI can store private files in Specified Channel and other users can access it from special link.!!..</blockquote></b>",
             disable_web_page_preview=True,
             reply_markup = InlineKeyboardMarkup(
                 [
