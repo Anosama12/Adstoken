@@ -26,9 +26,11 @@ async def channel_post(client: Client, message: Message):
     base64_string = await encode(string)
     link = f"https://t.me/{client.username}?start={base64_string}"
 
-    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🔁 Share URL", url=f'https://telegram.me/share/url?url={link}')]])
+    reply_markup = InlineKeyboardMarkup([
+        [InlineKeyboardButton("🔁 Share URL", url=f'https://telegram.me/share/url?url={link}'),
+        InlineKeyboardButton("View Post 👀", url=f'{link}')]])
 
-    await reply_text.edit(f"<b><blockquote>Here is your link</b>\n\n{link}</blockquote>\n\n", reply_markup=reply_markup, disable_web_page_preview = True)
+    await reply_text.edit(f"<b>Here is Your Target link\n\n{link}\n\n<a href=https://t.me/tutorialtoopenlink/211>How to Open Link</a></b>", reply_markup=reply_markup, disable_web_page_preview = True)
 
     if not DISABLE_CHANNEL_BUTTON:
         await post_message.edit_reply_markup(reply_markup)
