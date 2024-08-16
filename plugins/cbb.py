@@ -22,7 +22,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             reply_markup = InlineKeyboardMarkup(
                 [ [ InlineKeyboardButton("sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", callback_data ="source"),
                   InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ" , callback_data = "main")],
-                 [InlineKeyboardButton("ᴡᴀᴛᴄʜ sʜᴏʀᴛs 𝟷𝟾+ ᴠɪᴅᴇᴏs", url = "https://t.me/addlist/rdBCFt2zHoRmNDk1")],
+                 [InlineKeyboardButton("ᴡᴀᴛᴄʜ sʜᴏʀᴛs 𝟷𝟾+ ᴠɪᴅᴇᴏs", url = "http://t.me/UnseenRobot/shorts")],
                     [
                         InlineKeyboardButton("🔙 ʙᴀᴄᴋ ", callback_data = "home"),
                         InlineKeyboardButton("🚫 ᴄʟᴏsᴇ ", callback_data = "close")
@@ -74,7 +74,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                     InlineKeyboardButton(text="🎭", callback_data="about"),
                 ],[ InlineKeyboardButton( "ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ", callback_data = "main" ),
                     InlineKeyboardButton("sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ", callback_data = "source")
-                ], [ InlineKeyboardButton("ᴡᴀᴛᴄʜ sʜᴏʀᴛs 𝟷𝟾+ ᴠɪᴅᴇᴏs", url = "https://t.me/addlist/rdBCFt2zHoRmNDk1") ],
+                ], [ InlineKeyboardButton("ᴡᴀᴛᴄʜ sʜᴏʀᴛs 𝟷𝟾+ ᴠɪᴅᴇᴏs", url = "http://t.me/UnseenRobot/shorts") ],
                 [
                     InlineKeyboardButton("🤖 ᴀʙᴏᴜᴛ ᴍᴇ", callback_data = "about"),
                     InlineKeyboardButton("🚫 ᴄʟᴏsᴇ ", callback_data = "close")
