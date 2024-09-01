@@ -22,7 +22,7 @@ API_HASH = os.environ.get("API_HASH", "1a997c00c1209441a20c0b0f13fdfa54")
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002218265816"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "5837577167"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6038637868"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
@@ -39,7 +39,7 @@ TUT_VID = os.environ.get("TUT_VID","https://t.me/tutorialtoopenlink/209")
 
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002197752936"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002000107085"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
